@@ -1,0 +1,28 @@
+@media print {
+
+    .header{
+        display: none;
+        font-size: xx-large;
+    }
+
+    .cta-section{
+        display: none;
+    }
+
+    .main-wrapper{
+        margin-left: 0;
+    }
+
+    .resume-container{
+        width: 1500px;
+        max-width: 1500px;
+    }
+
+    .col-xl-9{
+        width: 85%;
+    }
+
+    .col-xl-3{
+        width: 15%;
+    }
+}

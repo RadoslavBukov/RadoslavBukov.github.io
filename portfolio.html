@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<title>.rb | Portfolio</title>
+	
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="DevCard Bootstrap 5 Template">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon_io/favicon2.ico"> 
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	
+	<!-- FontAwesome JS -->
+    <script defer src="fontawesome/all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css"/>
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="plugins/tiny-slider/tiny-slider.css">
+
+	<!-- Theme CSS -->  
+	<link id="theme-style" rel="stylesheet" href="css/style.css">
+
+</head> 
+
+<body>
+	
+	<header class="header text-center">	    
+		<div class="force-overflow">
+			<h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="index.html">Radoslav Bukov</a></h1>
+			
+			<nav class="navbar navbar-expand-lg navbar-dark" >
+				
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div id="navigation" class="collapse navbar-collapse flex-column" >
+					<div class="profile-section pt-3 pt-lg-0">
+						<img class="profile-image mb-3 rounded-circle mx-auto" src="images/profile.png" alt="image" >			
+						
+						<div class="bio mb-3">Hi, my name is Radoslav Bukov and I'm a software engineer. Welcome to my personal website!</div><!--//bio-->
+						<ul class="social-list list-inline py-2 mx-auto">
+							<li class="list-inline-item"><a href="https://www.facebook.com/RadoslawBukow/"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.linkedin.com/in/radoslav-bukov-b0a62183/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://github.com/RadoslavBukov"><i class="fab fa-github-alt fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.instagram.com/radoslav_bukov/?hl=bg"><i class="fab fa-instagram fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="mailto:radoslaw.bukow@gmail.com"><i class="fab fa-google fa-fw"></i></a></li>
+						</ul><!--//social-list-->
+						<hr> 
+					</div><!--//profile-section-->
+					
+					<ul class="navbar-nav flex-column text-start">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html"><i class="fas fa-user fa-fw me-2"></i>About Me</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="experience.html"><i class="fas fa-briefcase fa-fw me-2"></i>Experience</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="education.html"><i class="fas fa-solid fa-graduation-cap fa-fw me-2"></i>Education</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="courses.html"><i class="fas fa-solid fa-certificate fa-fw me-2"></i>Courses & Certificates</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="resume.html"><i class="fas fa-file-alt fa-fw me-2"></i>Resume / CV</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="portfolio.html"><i class="fas fa-laptop-code fa-fw me-2"></i>Portfolio<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html"><i class="fas fa-envelope-open-text fa-fw me-2"></i>Contacts</a>
+						</li>
+					</ul>
+					
+					<div class="my-2">
+						<a class="btn btn-primary" href="contact.html" target="_blank"><i class="fas fa-paper-plane me-2"></i>Write Me</a>
+					</div>
+					<div class="dark-mode-toggle text-center w-100">
+						<hr class="mb-4">
+					    <h4 class="toggle-name mb-3 "><i class="fas fa-adjust me-1"></i>Dark Mode</h4>
+					    
+					    <input class="toggle" id="darkmode" type="checkbox">
+					    <label class="toggle-btn mx-auto mb-0" for="darkmode"></label>
+					    
+					</div><!--//dark-mode-toggle-->
+				</div>
+			</nav>
+		</div><!--//force-overflow-->
+	</header>
+	    
+    <div class="main-wrapper">
+	    <section class="cta-section theme-bg-light py-5">
+		    <div class="container text-center single-col-max-width">
+			    <h2 class="heading">Portfolio</h2>
+			    <div class="intro">
+			    <p>Welcome to my online portfolio. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. I'm taking on freelance work at the moment. Want some help building your software?</p>
+			    
+			    </div>
+			    <a class="btn btn-primary" href="contact.html" target="_blank"><i class="fas fa-paper-plane me-2"></i>Hire Me</a>
+			    
+			    
+		    </div><!--//container-->
+	    </section>
+	    <section class="projects-list px-3 py-5 p-md-5">
+		    <div class="container">
+			    <div class="text-center">
+				    <ul id="filters" class="filters mb-5 mx-auto   ps-0">
+		                <li class="type active mb-3 mb-lg-0" data-filter="*">All</li>
+		                <li class="type  mb-3 mb-lg-0" data-filter=".webapp">Web App</li>
+		                <li class="type  mb-3 mb-lg-0" data-filter=".mobileapp">Mobile App</li>
+		                <li class="type  mb-3 mb-lg-0" data-filter=".frontend">Frontend</li>
+		                <li class="type  mb-3 mb-lg-0" data-filter=".backend">Backend</li>
+						<li class="type  mb-3 mb-lg-0" data-filter=".plc">PLC</li>
+		            </ul><!--//filters-->
+			    </div>
+	            
+			    <div class="project-cards row isotope">
+					<div class="isotope-item col-md-6 mb-5 backend">
+						<div class="card project-card">
+							<div class="row">
+								<div class="col-12 col-xl-5 card-img-holder">
+									<img src="images/project/project-1.jpg" class="card-img" alt="image">
+								</div>
+								<div class="col-12 col-xl-7">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link">Quadrotor position Control</a></h5>
+										<p class="card-text">Synthesis of quadrotor position control system. Dynamic and Kinematic model. MatLab simulations. </p>
+										<p class="card-text"><small class="text-muted">Client: Technical university</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="files/Synthesis of quadrotor position control system.pdf" target="_blank">
+										<i class="fas fa-eye me-2"></i>View Case Study
+									</a>
+								</div>
+							</div><!--//link-mask-->
+						</div><!--//card-->
+					</div><!--//col-->
+					<div class="isotope-item col-md-6 mb-5 plc">
+						<div class="card project-card">
+							<div class="row">
+								<div class="col-12 col-xl-5 card-img-holder">
+									<img src="images/project/project-3.jpg" class="card-img" alt="image">
+								</div>
+								<div class="col-12 col-xl-7">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link">Visual Inspection Integration</a></h5>
+										<p class="card-text">Integration of automatic visual solder joint inspection in automotive components assembly system.</p>
+										<p class="card-text"><small class="text-muted">Client: Technical University</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="files/DR2_English.pdf" target="_blank">
+										<i class="fas fa-eye me-2"></i>View Case Study
+									</a>
+								</div>
+							</div><!--//link-mask-->
+						</div><!--//card-->
+					</div><!--//col-->
+					<div class="isotope-item col-md-6 mb-5 webapp backend">
+						<div class="card project-card">
+							<div class="row">
+								<div class="col-12 col-xl-5 card-img-holder">
+									<img src="images/project/project-4.jpg" class="card-img" alt="image">
+								</div>
+								<div class="col-12 col-xl-7">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link">Project Heading</a></h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+										<p class="card-text"><small class="text-muted">Client: Apple</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="project.html">
+										<i class="fas fa-eye me-2"></i>View Case Study
+									</a>
+								</div>
+							</div><!--//link-mask-->
+						</div><!--//card-->
+					</div><!--//col-->
+					<div class="isotope-item col-md-6 mb-5 webapp frontend backend">
+						<div class="card project-card">
+							<div class="row">
+								<div class="col-12 col-xl-5 card-img-holder">
+									<img src="images/project/project-7.jpg" class="card-img" alt="image">
+								</div>
+								<div class="col-12 col-xl-7">
+									<div class="card-body">
+										<h5 class="card-title"><a href="project.html" class="theme-link">Project Heading</a></h5>
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+										<p class="card-text"><small class="text-muted">Client: Google</small></p>
+									</div>
+								</div>
+							</div>
+							<div class="link-mask">
+								<a class="link-mask-link" href="project.html"></a>
+								<div class="link-mask-text">
+									<a class="btn btn-secondary" href="project.html">
+										<i class="fas fa-eye me-2"></i>View Case Study
+									</a>
+								</div>
+							</div><!--//link-mask-->
+						</div><!--//card-->
+					</div><!--//col-->
+				</div><!--//row-->
+			
+		    </div>
+	    </section>
+	    
+		<footer class="footer text-center py-4">
+			<small class="copyright">Copyright &copy; 2023 <a href="https://radoslavbukov.github.io/" target="_blank">Radoslav Bukov</a></small>
+		</footer>
+    
+    </div><!--//main-wrapper-->
+
+    <!-- Javascript -->   
+    <script src="plugins/popper.min.js"></script> 
+    <script src="plugins/bootstrap/bootstrap.min.js"></script> 
+    
+    <!--Page Specific JS -->
+    <script type="text/javascript" src="plugins/imagesloaded.pkgd.min.js"></script> 
+    <script type="text/javascript" src="plugins/isotope.pkgd.min.js"></script> 
+    
+	<!-- Dark Mode -->
+	<script src="plugins/js-cookie.min.js"></script>
+	<script src="js/dark-mode.js"></script>
+    
+	<script type="text/javascript" src="js/isotope-custom.js"></script>
+
+
+</body>
+</html> 
+
