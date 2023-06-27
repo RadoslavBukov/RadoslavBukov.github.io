@@ -1,0 +1,19 @@
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .config-panel {
+        transition: none
+    }
+}
+
+
+
+@media (max-width: 680px) {
+    .res-cert{
+        display: block;
+    }
+}

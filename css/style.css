@@ -535,8 +535,14 @@ progress {
 }
 
 .img-fluid {
-    max-width: 100%;
+    max-width: 80%;
     height: auto
+}
+
+@media (max-width: 768px) {
+    .img-fluid {
+        align-items: center;
+    }
 }
 
 .img-thumbnail {
@@ -585,6 +591,13 @@ progress {
         display: inline-block;
         vertical-align: middle;
         white-space: normal;
+    }
+}
+
+@media (max-width: 600px) {
+    .certificate > img{
+        max-width: -webkit-fill-available;
+        max-height: fit-content;
     }
 }
 
