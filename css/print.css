@@ -25,4 +25,8 @@
     .col-xl-3{
         width: 15%;
     }
+
+    .contact {
+        display: flex;
+    }
 }
