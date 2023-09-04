@@ -14,19 +14,39 @@
     }
 
     .resume-container{
-        width: 1500px;
-        max-width: 1500px;
+        width: 100%;
+        max-width: 100%;
     }
 
     .col-xl-9{
-        width: 85%;
-    }
+        width: 80%;
+    } 
 
     .col-xl-3{
-        width: 15%;
+        width: 20%;
+        font-size: 1rem;
+    }
+
+    .resume-intro{
+        font-size: 1rem;
+    }
+
+    .resume-name{
+        font-size: 3rem;
+    }
+
+    .resume-tagline{
+        font-size: 2rem;
     }
 
     .contact {
         display: flex;
     }
+
+    /* Two pages CV  */
+    .resume-main .item-content {
+        font-size: 0.95rem;
+    }
+
+
 }
