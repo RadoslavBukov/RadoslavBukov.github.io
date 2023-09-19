@@ -22,7 +22,6 @@
 
 	<!-- Theme CSS -->  
 	<link id="theme-style" rel="stylesheet" href="css/style.css">
-
 </head> 
 
 <body>
@@ -112,8 +111,8 @@
 	    </section>
 	    <section class="contact-section px-3 py-5 p-md-5">
 		    <div class="container">
-			    <form id="contact-form" class="contact-form col-lg-8 mx-lg-auto" method="post" action="">
-			        <h3 class="text-center mb-3">Get In Touch</h3>
+			    <form id="contact" class="contact-form col-lg-8 mx-lg-auto" method="POST">
+					<h3 class="text-center mb-3">Get In Touch</h3>
 			        <div class="row g-3">                                                           
 		                <div class="col-12 col-md-6">
 		                    <label class="sr-only" for="cname">Name</label>
@@ -126,9 +125,9 @@
 		                <div class="col-12">
 			                <select id="services" class="form-select" name="services">
 								<option selected>Select a subject you're interested in...</option>
-								<option value="basic">Professional</option>
-								<option value="standard">Freelance</option>
-								<option value="premium">Personal</option>
+								<option value="Professional">Professional</option>
+								<option value="Freelance">Freelance</option>
+								<option value="Personal">Personal</option>
 								<option value="not sure">Not sure</option>
 							</select>
 							<div class="mt-2">
@@ -140,7 +139,7 @@
 		                    <textarea class="form-control" id="cmessage" name="message" placeholder="Enter your message" rows="10" required="" aria-required="true"></textarea>
 		                </div>
 		                 <div class="form-group col-12">
-		                    <button type="submit" class="btn btn-block btn-primary py-2">Send Now</button>
+		                    <button name="submit" type="submit" id="button" class="btn btn-block btn-primary py-2">Send Now</button>
 		                </div>                           
 		            </div><!--//form-row-->
 		        </form>
@@ -151,7 +150,21 @@
 			<small class="copyright">Copyright &copy; 2023 <a href="https://radoslavbukov.github.io/" target="_blank">Radoslav Bukov</a></small>
 		</footer>
     </div><!--//main-wrapper-->
-
+	
+	<!-- loader -->
+	 <div class="loader" id="loader">
+		<img
+		  src="https://media.giphy.com/media/MEiZ5h8lOkM7rwideE/giphy.gif"
+		  alt=""
+		/>
+	  </div>
+	<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	<script src="/scripts/emailSender.js"></script>
+ 
     <!-- Javascript -->          
     <script src="plugins/popper.min.js"></script> 
     <script src="plugins/bootstrap/bootstrap.min.js"></script> 
