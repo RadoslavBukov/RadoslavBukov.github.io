@@ -45,3 +45,7 @@ modeToggler.addEventListener('change', () => {
 		console.log ('change to light mode');
 	}
 });
+
+modeToggler.addEventListener('keypress', () => {
+	modeToggler.checked = !modeToggler.checked;
+});
