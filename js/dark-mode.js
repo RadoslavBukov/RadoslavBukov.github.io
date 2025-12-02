@@ -15,10 +15,12 @@ function setThemeFromCookie() {
 		console.log('Cookie: dark mode' );
 		
 	} else {
-		documentBody.classList.remove('dark-mode');
-		modeToggler.checked = false; // toggle change
+		// Set dark mode as default
+		documentBody.classList.add('dark-mode');
+		modeToggler.checked = true; // toggle change
+		Cookies.set('mode', 'dark-mode', { expires: 7 });
 		
-		console.log('Cookie: light mode' );
+		console.log('Cookie: dark mode (default)' );
 	}
 }
 
