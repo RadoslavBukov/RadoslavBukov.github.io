@@ -1,0 +1,30 @@
+name: Pre-deploy Checks
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      # JS линт
+      - name: Lint JS
+        run: |
+          npm install eslint
+          npx eslint ./js/**/*.js
+
+      # HTML линт
+      - name: Lint HTML
+        run: |
+          npm install -g htmlhint
+          htmlhint ./*.html
+
+      # CSS линт
+      - name: Lint CSS
+        run: |
+          npm install -g stylelint
+          stylelint "**/*.css"
