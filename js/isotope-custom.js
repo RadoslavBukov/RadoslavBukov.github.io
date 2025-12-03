@@ -20,7 +20,7 @@ imagesLoaded(isotopeContainer, function () {
 	// filter items on click
 	filterItems.forEach((filterItem) => {
 	
-		filterItem.addEventListener('click', (e) => {
+		filterItem.addEventListener('click', () => {
 			
 			let filterValue = filterItem.getAttribute('data-filter');
 			

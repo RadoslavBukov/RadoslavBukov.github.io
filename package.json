@@ -1,4 +1,19 @@
 {
+  "name": "radoslavbukov.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "htmlhint": "^0.11.0"
+  },
+  "scripts": {
+    "lint:js": "npx eslint js/**/*.js",
+    "lint:html": "npx htmlhint *.html",
+    "lint:css": "npx stylelint \"**/*.css\"",
+    "lint": "npm run lint:html && npm run lint:js && npm run lint:css",
+    "prepare-dist": "rm -rf dist && mkdir -p dist && rsync -a --exclude='.git' --exclude='node_modules' --exclude='.github' ./ dist/ || true"
+  }
+  ,
   "dependencies": {
     "@emailjs/browser": "^3.11.0"
   }

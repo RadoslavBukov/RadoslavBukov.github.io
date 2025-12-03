@@ -1,6 +1,6 @@
 "use strict";
 
-const slider = tns({
+tns({
     container: '.testimonial-carousel',
     loop: true,
     items: 1,

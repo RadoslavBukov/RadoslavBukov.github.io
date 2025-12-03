@@ -11,20 +11,22 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
       # JS линт
       - name: Lint JS
-        run: |
-          npm install eslint
-          npx eslint ./js/**/*.js
+        run: npm run lint:js
 
       # HTML линт
       - name: Lint HTML
-        run: |
-          npm install -g htmlhint
-          htmlhint ./*.html
+        run: npm run lint:html
 
       # CSS линт
       - name: Lint CSS
-        run: |
-          npm install -g stylelint
-          stylelint "**/*.css"
+        run: npm run lint:css
