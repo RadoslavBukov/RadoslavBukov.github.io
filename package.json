@@ -11,6 +11,7 @@
     "lint:html": "npx htmlhint *.html",
     "lint:css": "npx stylelint \"**/*.css\"",
     "lint": "npm run lint:html && npm run lint:js && npm run lint:css",
+    "optimize-images": "echo \"Skipping image optimization (no config)\"",
     "prepare-dist": "rm -rf dist && mkdir -p dist && rsync -a --exclude='.git' --exclude='node_modules' --exclude='.github' ./ dist/ || true"
   }
   ,
