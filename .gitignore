@@ -29,3 +29,25 @@ coverage/
 
 # Ignore generated GitHub Actions workspace files
 .github/workflows/node_modules/
+
+# Additional common ignores
+# Local editor/IDE caches
+.cache-jest/
+.eslintcache
+.history/
+
+# Deployment / credentials
+.ftpconfig
+sftp-config.json
+*.pem
+*.key
+*.crt
+credentials.json
+
+# Local env files (explicit)
+.env.local
+
+# Misc temporary files
+.cache-loader/
+tmp/
+temp/
