@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
-    "eslint": "^9.39.1",
-    "htmlhint": "^0.11.0"
+    "eslint": "^9.39.2",
+    "htmlhint": "^1.8.1",
+    "stylelint": "^17.1.1",
+    "stylelint-config-standard": "^40.0.0"
   },
   "scripts": {
     "lint:js": "npx eslint js/**/*.js",
@@ -13,8 +15,7 @@
     "lint": "npm run lint:html && npm run lint:js && npm run lint:css",
     "optimize-images": "echo \"Skipping image optimization (no config)\"",
     "prepare-dist": "rm -rf dist && mkdir -p dist && rsync -a --exclude='.git' --exclude='node_modules' --exclude='.github' ./ dist/ || true"
-  }
-  ,
+  },
   "dependencies": {
     "@emailjs/browser": "^3.11.0"
   }
